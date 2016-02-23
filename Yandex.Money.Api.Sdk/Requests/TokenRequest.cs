@@ -28,7 +28,7 @@ namespace Yandex.Money.Api.Sdk.Requests
         /// </summary>
         public String GrantType
         {
-            get { return " authorization_code"; }
+            get { return "authorization_code"; }
         }
 
         /// <summary>
