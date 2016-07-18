@@ -117,7 +117,59 @@ namespace Yandex.Money.Api.Sdk.Responses
                         return CardType.AmericanExpress;
                     case "JCB":
                         return CardType.Jcb;
-                    default: return CardType.Unknown;
+                    default:
+                        return CardType.Unknown;
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Parameters for the YamoneyCard of the AccountInfoResult
+    /// </summary>
+    [DataContract]
+    public class YamoneyCard
+    {
+        /// <summary>
+        /// Id
+        /// </summary>
+        [DataMember(Name = "id")]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// State
+        /// </summary>
+        [DataMember(Name = "state")]
+        public string State { get; set; }
+
+        /// <summary>
+        /// Card type. May be omitted if unknown
+        /// </summary>
+        [DataMember(Name = "type")]
+        public string TypeOfCard { get; set; }
+
+        /// <summary>
+        /// Masked card number
+        /// </summary>
+        [DataMember(Name = "pan_fragment")]
+        public string PanFragment { get; set; }
+
+        public CardType Type
+        {
+            get
+            {
+                switch (TypeOfCard)
+                {
+                    case "VISA":
+                        return CardType.Visa;
+                    case "MasterCard":
+                        return CardType.MasterCard;
+                    case "AmericanExpress":
+                        return CardType.AmericanExpress;
+                    case "JCB":
+                        return CardType.Jcb;
+                    default:
+                        return CardType.Unknown;
                 }
             }
         }
@@ -176,6 +228,12 @@ namespace Yandex.Money.Api.Sdk.Responses
         /// </summary>
         [DataMember(Name = "cards_linked")]
         public List<CardsLinked> CardsLinked { get; set; }
+
+        /// <summary>
+        /// Information about attached Yandex.Money cards.
+        /// </summary>
+        [DataMember(Name = "ymoney_cards")]
+        public List<YamoneyCard> YamoneyCards { get; set; }
 
         /// <summary>
         /// The list of connected services.
