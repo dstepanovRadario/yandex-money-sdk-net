@@ -63,7 +63,10 @@ namespace Yandex.Money.Api.Sdk.Requests
         /// Constant value: p2p
         /// </summary>
         [ParamName("pattern_id")]
-        public string PatternID { get { return "p2p"; } }
+        public string PatternID
+        {
+            get { return "p2p"; }
+        }
 
         /// <summary>
         /// ID of the transfer recipient (account number, phone number, or email)
@@ -94,6 +97,12 @@ namespace Yandex.Money.Api.Sdk.Requests
         /// </summary>
         [ParamName("label")]
         public string Label { get; set; }
+
+        /// <summary>
+        /// autoselect recipient, optional
+        /// </summary>
+        [ParamName("recipient_autoselect")]
+        public bool RecipientAutoselect { get; set; }
     }
 
     /// <summary>
@@ -106,7 +115,10 @@ namespace Yandex.Money.Api.Sdk.Requests
         /// an indication that the transfer is protected by code
         /// </summary>
         [ParamName("codepro")]
-        public bool Codepro { get { return true; } }
+        public bool Codepro
+        {
+            get { return true; }
+        }
 
         /// <summary>
         /// Number of days during which: a transfer recipient can enter the secret code and receive the transfer to the account a deferred transfer recipient can receive the transfer
@@ -119,13 +131,16 @@ namespace Yandex.Money.Api.Sdk.Requests
     /// <summary>
     /// Arguments for transferring funds to the accounts of other users
     /// </summary>
-    public class P2PHoldForPickupRequestPaymentParams : P2PCodeProRequestPaymentParams
+    public class P2PHoldForPickupRequestPaymentParams : P2PRequestPaymentParams
     {
         /// <summary>
         /// Indicates that deferred transfer
         /// </summary>
         [ParamName("hold_for_pickup")]
-        public bool HoldForPickup { get { return true; } }
+        public bool HoldForPickup
+        {
+            get { return true; }
+        }
     }
 
     /// <summary>
@@ -137,7 +152,10 @@ namespace Yandex.Money.Api.Sdk.Requests
         /// Constant value: phone-topup
         /// </summary>
         [ParamName("pattern_id")]
-        public string PatternID { get { return "phone-topup"; } }
+        public string PatternID
+        {
+            get { return "phone-topup"; }
+        }
 
         /// <summary>
         ///  Phone number in the format of ITU-T E. 164 full number starting with 7. Supported accommodation only Russian cellular operators. Example: 79219990099
