@@ -161,6 +161,18 @@ namespace Yandex.Money.Api.Sdk.Responses
         [DataMember(Name = "ext_action_uri")]
         public string ExtActionUri { get; set; }
 
+        /// <summary>
+        /// payment title
+        /// </summary>
+        [DataMember(Name = "title")]
+        public string Title { get; set; }
+
+        /// <summary>
+        /// autoselected recipient
+        /// </summary>
+        [DataMember(Name = "multiple_recipients_found")]
+        public bool MultipleRecipientsFound { get; set; }
+
         public override Uri ActionUri
         {
             get
