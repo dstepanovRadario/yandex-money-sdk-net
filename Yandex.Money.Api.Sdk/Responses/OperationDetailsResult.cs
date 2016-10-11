@@ -145,6 +145,18 @@ namespace Yandex.Money.Api.Sdk.Responses
         [DataMember(Name = "digital_goods")]
         public DigitalGoods DigitalGoods { get; set; }
 
+        /// <summary>
+        /// Is favorite
+        /// </summary>
+        [DataMember(Name = "favourite")]
+        public bool Favorite { get; set; }
+
+        /// <summary>
+        /// Is repeatable
+        /// </summary>
+        [DataMember(Name = "repeatable")]
+        public bool Repeatable { get; set; }
+
         public OperationType OperationType { get { return GetOperationType(Type); } }
 
         public MoneyFlow MoneyFlow { get { return GetMoneyFlow(Direction); } }
