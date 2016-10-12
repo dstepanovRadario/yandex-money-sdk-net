@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Yandex.Money.Api.Sdk.Interfaces;
 using Yandex.Money.Api.Sdk.Requests.Base;
@@ -131,6 +132,7 @@ namespace Yandex.Money.Api.Sdk.Requests
     /// <summary>
     /// Arguments for transferring funds to the accounts of other users
     /// </summary>
+    [Obsolete]
     public class P2PHoldForPickupRequestPaymentParams : P2PRequestPaymentParams
     {
         /// <summary>
@@ -141,6 +143,27 @@ namespace Yandex.Money.Api.Sdk.Requests
         {
             get { return true; }
         }
+    }
+
+    /// <summary>
+    /// Arguments for transferring funds to the accounts of other users
+    /// </summary>
+
+    public class P2PHoldForPickupExRequestPaymentParams : P2PRequestPaymentParams
+    {
+        /// <summary>
+        /// Indicates that deferred transfer
+        /// </summary>
+        [ParamName("hold_for_pickup")]
+        public string HoldForPickup
+        {
+            get { return IsMandatory ? "mandatory" : true.ToString().ToLowerInvariant(); }
+        }
+
+        /// <summary>
+        /// to force deferred transfer
+        /// </summary>
+        public bool IsMandatory { get; set; }
     }
 
     /// <summary>
