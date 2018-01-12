@@ -6,7 +6,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// Registration application instance
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/instance-id-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/instance-id-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class InstanceIdRequest<TResult> : JsonRequest<TResult>

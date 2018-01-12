@@ -8,7 +8,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// view the history of transactions
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/operation-history-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/operation-history-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class OperationHistoryRequest<TResult> : JsonRequest<TResult>

@@ -6,7 +6,7 @@ namespace Yandex.Money.Api.Sdk.Authorization
 
     /// <summary>
     /// Represents the money-source permissions
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/concepts/protocol-rights-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/concepts/protocol-rights-docpage/"/>
     /// </summary>
     [Flags]
     public enum Source
@@ -28,7 +28,7 @@ namespace Yandex.Money.Api.Sdk.Authorization
 
     /// <summary>
     /// Represents a list of requested permissions 
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/concepts/protocol-rights-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/concepts/protocol-rights-docpage/"/>
     /// </summary>
     public class Scopes
     {

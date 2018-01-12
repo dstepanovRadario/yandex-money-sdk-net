@@ -6,7 +6,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// obtaining detailed information about the operation from the history
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/operation-details-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/operation-details-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class OperationDetailsRequest<TResult> : JsonRequest<TResult>

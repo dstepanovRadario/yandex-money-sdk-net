@@ -9,7 +9,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// Creates a payment
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class RequestPaymentRequest<TResult> : JsonRequest<TResult>
@@ -56,7 +56,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 
     /// <summary>
     /// Arguments for transferring funds to the accounts of other users
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
     /// </summary>
     public class P2PRequestPaymentParams : RequestParams
     {
@@ -108,7 +108,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 
     /// <summary>
     /// Arguments for transferring funds to the accounts of other users
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/"/>
     /// </summary>
     public class P2PCodeProRequestPaymentParams : P2PRequestPaymentParams
     {

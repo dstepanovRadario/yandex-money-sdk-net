@@ -5,7 +5,7 @@ using Yandex.Money.Api.Sdk.Responses.Base;
 namespace Yandex.Money.Api.Sdk.Responses
 {
     /// <summary>
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/incoming-transfer-accept-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/incoming-transfer-accept-docpage/"/>
     /// </summary>
     public class IncomingTransferResult : ApiResultBase
     {

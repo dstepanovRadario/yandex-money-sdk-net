@@ -1,7 +1,7 @@
 namespace Yandex.Money.Api.Sdk.Interfaces
 {
     /// <summary>
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/concepts/protocol-request-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/concepts/protocol-request-docpage/"/>
     /// </summary>
     public interface IAuthenticator
     {

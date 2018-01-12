@@ -4,13 +4,13 @@ namespace Yandex.Money.Api.Sdk.Authorization
 {
     /// <summary>
     /// Represents an authorization request parameters
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/request-access-token-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/request-access-token-docpage/"/>
     /// </summary>
     public class AuthorizationRequestParams : RequestParams
     {
         /// <summary>
         /// The client_id that was assigned to the application during registration  
-        /// <see cref="http://tech.yandex.ru/money/doc/dg/tasks/register-client-docpage/"/>
+        /// <see href="http://tech.yandex.ru/money/doc/dg/tasks/register-client-docpage/"/>
         /// </summary>
         [ParamName("client_id")]
         public string ClientId { get; set; }

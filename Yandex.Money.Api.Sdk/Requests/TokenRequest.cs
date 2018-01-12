@@ -7,7 +7,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// exchange of temporary token on the authorization token
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/obtain-access-token-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/obtain-access-token-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class TokenRequest<TResult> : JsonRequest<TResult>
@@ -19,7 +19,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 
         /// <summary>
         /// The client_id that was assigned to the application during registration
-        /// <see cref="http://tech.yandex.ru/money/doc/dg/tasks/register-client-docpage/"/>
+        /// <see href="http://tech.yandex.ru/money/doc/dg/tasks/register-client-docpage/"/>
         /// </summary>
         public String ClientId { get; set; }
 

@@ -4,7 +4,7 @@ namespace Yandex.Money.Api.Sdk.Exceptions
 {
     /// <summary>
     /// Represents error when HTTP request does not conform to protocol format.
-    /// <see cref="http://api.yandex.com/money/doc/dg/concepts/protocol-response.xml"/>
+    /// <see href="http://api.yandex.com/money/doc/dg/concepts/protocol-response.xml"/>
     /// See codes for reasons for authorization refusal
     /// </summary>
     public class InvalidRequestException : Exception

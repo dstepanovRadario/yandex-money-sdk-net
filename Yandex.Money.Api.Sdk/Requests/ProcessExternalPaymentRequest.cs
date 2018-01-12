@@ -6,7 +6,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// Confirms a payment that was created using the request-payment method
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/request-external-payment-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/request-external-payment-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class ProcessExternalPaymentRequest<TResult> : ProcessPaymentRequest<TResult>

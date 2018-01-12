@@ -7,7 +7,7 @@ namespace Yandex.Money.Api.Sdk.Responses
 {
     /// <summary>
     /// detailed information about a particular operation from the history
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/operation-details-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/operation-details-docpage/"/>
     /// </summary>
     [DataContract]
     public class OperationDetailsResult : ApiResultBase

@@ -5,7 +5,7 @@ using Yandex.Money.Api.Sdk.Responses.Base;
 namespace Yandex.Money.Api.Sdk.Responses
 {
     /// <summary>
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/operation-history-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/operation-history-docpage/"/>
     /// </summary>
     [DataContract]
     public class OperationHistoryResult : ApiResultBase

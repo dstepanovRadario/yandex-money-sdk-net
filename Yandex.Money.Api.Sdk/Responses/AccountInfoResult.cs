@@ -176,7 +176,7 @@ namespace Yandex.Money.Api.Sdk.Responses
     }
 
     /// <summary>
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/account-info-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/account-info-docpage/"/>
     /// </summary>
     [DataContract]
     public class AccountInfoResult

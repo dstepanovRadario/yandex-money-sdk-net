@@ -6,7 +6,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// Cancel incoming transfers, protected by code, and transfer demand
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/incoming-transfer-reject-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/incoming-transfer-reject-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class IncomingTransferRejectRequest<TResult> : JsonRequest<TResult>

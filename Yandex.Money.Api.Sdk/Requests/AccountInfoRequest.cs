@@ -5,7 +5,7 @@ namespace Yandex.Money.Api.Sdk.Requests
 {
     /// <summary>
     /// Getting information about the status of the user account 
-    /// <see cref="http://tech.yandex.ru/money/doc/dg/reference/account-info-docpage/"/>
+    /// <see href="http://tech.yandex.ru/money/doc/dg/reference/account-info-docpage/"/>
     /// </summary>
     /// <typeparam name="TResult"></typeparam>
     public class AccountInfoRequest<TResult> : JsonRequest<TResult>
